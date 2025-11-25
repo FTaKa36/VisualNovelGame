@@ -35,11 +35,33 @@
       "name": "NewTiledSprite",
       "persistentUuid": "ac108da5-a679-4ae0-8686-534c74002cea",
       "width": 636,
-      "x": 332,
-      "y": 59,
+      "x": 8,
+      "y": 2,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 720,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Top_down_terrain_128x128",
+      "persistentUuid": "d892118c-4039-46d6-a554-9a6ddbeac41c",
+      "width": 636,
+      "x": 644,
+      "y": 2,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":128,\"tileHeight\":128,\"dimX\":1,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[18]]}]}"
+        }
+      ],
       "initialVariables": []
     }
   ],
@@ -54,6 +76,21 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "8b09a5d87398e59848c8fcf81c06881485fa3c7221e69085dd31280eeb2535ae",
+      "name": "Top_down_terrain_128x128",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "mapPack_tilesheet_2X.png",
+        "rowCount": 12,
+        "columnCount": 17,
+        "tileSize": 128,
+        "tilesWithHitBox": ""
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -61,6 +98,9 @@
     "children": [
       {
         "objectName": "NewTiledSprite"
+      },
+      {
+        "objectName": "Top_down_terrain_128x128"
       }
     ]
   },

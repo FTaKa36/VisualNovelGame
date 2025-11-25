@@ -98,6 +98,18 @@
         "name": "9b427df71c582bbd250ca008015a21b9.jpg",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/mapPack_tilesheet_2X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mapPack_tilesheet_2X.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/High Definition/5f0063211bf3fddcc0a7c68a2cafb734e57e96df0f5a55d4906ffcfac71936b0_mapPack_tilesheet_2X.png",
+          "name": "mapPack_tilesheet_2X.png"
+        }
       }
     ],
     "resourceFolders": []
