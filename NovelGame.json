@@ -118,6 +118,70 @@
         "name": "IMG_0059.PNG",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/BG/IMG_0059.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\IMG_0059.PNG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/IMG_0058.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\IMG_0058.PNG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/IMG_0057.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\IMG_0057.PNG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/ChatGPT Image 22 Nov 2025, 23.16.11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\ChatGPT Image 22 Nov 2025, 23.16.11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/textBox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\textBox.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/textBox2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\textBox2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/New dialogue tree.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\"}",
+        "name": "New dialogue tree",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/script.json.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/script.json.json\"}",
+        "name": "script.json",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -131,7 +195,7 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/base"
     }
   ],
   "externalEvents": [],
