@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6455105703311483,
+    "zoomFactor": 0.8141881203709926,
     "windowMask": false,
     "selectedLayer": ""
   },
@@ -44,6 +44,7 @@
       "height": 729,
       "keepRatio": true,
       "layer": "",
+      "locked": true,
       "name": "BG1",
       "persistentUuid": "edf68560-e239-464b-9df3-debddd5c6576",
       "width": 1288,
@@ -58,15 +59,51 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 227,
+      "height": 222,
       "keepRatio": true,
       "layer": "",
+      "locked": true,
       "name": "textBox",
       "persistentUuid": "f6fc4a6e-4905-445d-b0f2-b4f234a526d0",
-      "width": 1288,
-      "x": -5,
-      "y": 493,
-      "zOrder": 2,
+      "width": 1144,
+      "x": 76,
+      "y": 487,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 61,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "name",
+      "persistentUuid": "5cb6b97d-4004-49a0-8d05-fad7d4220865",
+      "width": 198,
+      "x": 142,
+      "y": 449,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 151,
+      "keepRatio": true,
+      "layer": "",
+      "name": "boxDialog",
+      "persistentUuid": "ece781eb-2077-4e8d-a1db-23a81c562a13",
+      "width": 1105,
+      "x": 98,
+      "y": 533,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -77,12 +114,13 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "name",
-      "persistentUuid": "5cb6b97d-4004-49a0-8d05-fad7d4220865",
+      "locked": true,
+      "name": "nameBox",
+      "persistentUuid": "3d6f2dd4-8baa-4e71-aef7-dfa094325c7f",
       "width": 0,
-      "x": 137,
-      "y": 498,
-      "zOrder": 3,
+      "x": 135,
+      "y": 440,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -90,16 +128,16 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 78,
+      "depth": 0,
+      "height": 530,
       "keepRatio": true,
       "layer": "",
-      "name": "boxDialog",
-      "persistentUuid": "ece781eb-2077-4e8d-a1db-23a81c562a13",
-      "width": 1027,
-      "x": 150,
-      "y": 583,
-      "zOrder": 4,
+      "name": "female1",
+      "persistentUuid": "bec81378-335e-456e-948a-55bd3c52595b",
+      "width": 530,
+      "x": 293,
+      "y": 191,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -372,7 +410,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\BG\\textBox2.png",
+                  "image": "assets\\BG\\newTextBox.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -397,11 +435,11 @@
                       },
                       {
                         "x": 1108,
-                        "y": 250
+                        "y": 209
                       },
                       {
                         "x": 0,
-                        "y": 250
+                        "y": 209
                       }
                     ]
                   ]
@@ -420,7 +458,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Clara",
+        "text": "name",
         "opacity": 255,
         "fontSize": 45,
         "visible": true,
@@ -440,13 +478,293 @@
       "content": {
         "text": "\" \"",
         "opacity": 255,
-        "fontSize": 60,
+        "fontSize": 45,
         "visible": true,
-        "color": "0;0;0",
+        "color": "255;255;255",
+        "fontFamily": "Arial",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ghost",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Character\\Artboard 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 376,
+                        "y": 281
+                      },
+                      {
+                        "x": 909,
+                        "y": 281
+                      },
+                      {
+                        "x": 909,
+                        "y": 804
+                      },
+                      {
+                        "x": 376,
+                        "y": 804
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 40,
+      "name": "optionBox",
+      "texture": "assets\\BG\\optionBox.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 40,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "optionText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "options\noptions",
+        "opacity": 255,
+        "fontSize": 32,
+        "visible": true,
+        "color": "255;255;255",
         "fontFamily": "Arial",
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "female1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Character\\IMG_0069.PNG",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 152,
+                        "y": 56
+                      },
+                      {
+                        "x": 1014,
+                        "y": 56
+                      },
+                      {
+                        "x": 1014,
+                        "y": 1200
+                      },
+                      {
+                        "x": 152,
+                        "y": 1200
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "female2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Character\\Tak berjudul62_20251121184955.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 821,
+                        "y": 1125
+                      },
+                      {
+                        "x": 1214,
+                        "y": 1125
+                      },
+                      {
+                        "x": 1214,
+                        "y": 1669
+                      },
+                      {
+                        "x": 821,
+                        "y": 1669
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "nameBox",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BG\\nameBox.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 214,
+                        "y": 0
+                      },
+                      {
+                        "x": 214,
+                        "y": 82
+                      },
+                      {
+                        "x": 0,
+                        "y": 82
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -468,10 +786,31 @@
         "objectName": "textBox"
       },
       {
+        "objectName": "nameBox"
+      },
+      {
         "objectName": "name"
       },
       {
         "objectName": "boxDialog"
+      },
+      {
+        "objectName": "NewSprite"
+      },
+      {
+        "objectName": "ghost"
+      },
+      {
+        "objectName": "female1"
+      },
+      {
+        "objectName": "female2"
+      },
+      {
+        "objectName": "optionBox"
+      },
+      {
+        "objectName": "optionText"
       }
     ]
   },
@@ -496,6 +835,15 @@
           "parameters": [
             "",
             "script.json"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"typewritter\""
           ]
         },
         {
@@ -542,9 +890,9 @@
               },
               "parameters": [
                 "",
-                "\"delay\"",
-                ">",
-                "0.05"
+                "\"typewritter\"",
+                ">=",
+                "0.04"
               ]
             }
           ],
@@ -561,30 +909,67 @@
               },
               "parameters": [
                 "",
-                "\"delay\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
+                "\"typewritter\""
               ]
             }
           ],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "value": "DialogueTree::GoToNextLine"
-              },
-              "parameters": []
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::GoToNextLine"
+                  },
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Right\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::CompleteClippedTextScrolling"
+                  },
+                  "parameters": []
+                }
+              ]
             }
           ]
         }

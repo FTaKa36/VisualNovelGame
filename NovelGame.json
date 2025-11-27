@@ -182,6 +182,54 @@
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/script.json.json\"}",
         "name": "script.json",
         "userAdded": false
+      },
+      {
+        "file": "assets/Character/Artboard 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Character\\Artboard 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Character/IMG_0069.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Character\\IMG_0069.PNG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Character/Tak berjudul62_20251121184955.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Character\\Tak berjudul62_20251121184955.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/optionBox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\optionBox.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/newTextBox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\newTextBox.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BG/nameBox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BG\\nameBox.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
