@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210186,
+    "zoomFactor": 0.49508400737488983,
     "windowMask": false,
     "selectedLayer": "Bt_lorong"
   },
@@ -1194,48 +1194,15 @@
               "parameters": []
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "DialogueTree::IsDialogueLineType"
-          },
-          "parameters": [
-            "\"options\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "HideLayer"
-          },
-          "parameters": [
-            "",
-            "\"Option UI\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "when the dialoge line is options is for when the script.json has 1/2 link of choices it run the action to show layer and hide while at the same time activating the button\n\nright now in order to do this we have to have atleast 2 option in the script which is stupid but it'll do for now"
-    },
-    {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1250,11 +1217,21 @@
       "actions": [
         {
           "type": {
-            "value": "ShowLayer"
+            "value": "Montre"
           },
           "parameters": [
-            "",
-            "\"Option UI\""
+            "ChangeBGButton1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "ChangeBGButton1",
+            "yes",
+            ""
           ]
         },
         {
@@ -1268,156 +1245,99 @@
         },
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+            "value": "ShowLayer"
           },
           "parameters": [
-            "ChangeBGButton1",
-            "yes",
-            "yes"
+            "",
+            "\"Option UI\""
           ]
         }
       ],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "IsMouseWheelScrollingUp"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "DialogueTree::SelectPreviousOption"
-              },
-              "parameters": []
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "when the dialoge line is options is for when the script.json has 1/2 link of choices it run the action to show layer and hide while at the same time activating the button\n\nright now in order to do this we have to have atleast 2 option in the script which is stupid but it'll do for now"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "IsMouseWheelScrollingDown"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "DialogueTree::SelectNextOption"
-              },
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "DialogueTree::ConfirmSelectOption"
-              },
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::HasSelectedOptionChanged"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "DialogueTree::IsCommandCalled"
-              },
-              "parameters": [
-                "BG1.Animation::Name()"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "optionText",
-                "=",
-                "DialogueTree::VerticalOptionsList(\"\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
                 "BG1",
                 "Animation",
-                "=",
+                "endsWith",
                 "\"lorong\""
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "aiGeneratedEventId": "01KB4FHECTE82FWPA0TRCZMDNX",
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "ScriptDone",
-            "true",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "ChangeBGButton1",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "ChangeBGText",
-            ""
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_kamar",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_pentagram",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "ChangeBGButton1",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_kamar",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_pentagram",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ChangeBGButton1"
+              ]
+            }
           ]
         }
       ]
@@ -1450,16 +1370,6 @@
         },
         {
           "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "ScriptDone",
-            "False",
-            "False"
-          ]
-        },
-        {
-          "type": {
             "value": "ShowLayer"
           },
           "parameters": [
@@ -1483,19 +1393,21 @@
             "ChangeBGButton1"
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "changebg1button is for changing background by changing the animation set to whatever the set we pick\nIT NEEDS TO BE DISABLED OR USER CAN PRESS IT EVEN WHEN THE BUTTON IS INVISIBLE"
+        }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "changebg1button is for changing background by changing the animation set to whatever the set we pick\nIT NEEDS TO BE DISABLED OR USER CAN PRESS IT EVEN WHEN THE BUTTON IS INVISIBLE"
     }
   ],
   "layers": [
