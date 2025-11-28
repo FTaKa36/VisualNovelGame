@@ -18,9 +18,9 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7370816317994043,
+    "zoomFactor": 0.5468750000000014,
     "windowMask": false,
-    "selectedLayer": ""
+    "selectedLayer": "Option UI"
   },
   "objectsGroups": [
     {
@@ -31,11 +31,25 @@
         },
         {
           "name": "boxDialog"
+        },
+        {
+          "name": "ChangeBGText"
         }
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "ScriptDone",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "optionsactive",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -44,7 +58,6 @@
       "height": 729,
       "keepRatio": true,
       "layer": "",
-      "locked": true,
       "name": "BG1",
       "persistentUuid": "edf68560-e239-464b-9df3-debddd5c6576",
       "width": 1288,
@@ -59,51 +72,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 222,
+      "height": 173,
       "keepRatio": true,
-      "layer": "",
-      "locked": true,
-      "name": "textBox",
-      "persistentUuid": "f6fc4a6e-4905-445d-b0f2-b4f234a526d0",
-      "width": 1144,
-      "x": 76,
-      "y": 487,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 61,
-      "keepRatio": true,
-      "layer": "",
-      "locked": true,
-      "name": "name",
-      "persistentUuid": "5cb6b97d-4004-49a0-8d05-fad7d4220865",
-      "width": 198,
-      "x": 142,
-      "y": 449,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 151,
-      "keepRatio": true,
-      "layer": "",
+      "layer": "Dialogue",
       "name": "boxDialog",
-      "persistentUuid": "ece781eb-2077-4e8d-a1db-23a81c562a13",
-      "width": 1105,
-      "x": 98,
-      "y": 533,
-      "zOrder": 5,
+      "persistentUuid": "43060e5a-08a0-469b-9fdb-213990ed7b4e",
+      "width": 1027,
+      "x": 140,
+      "y": 518,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -113,31 +90,61 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "locked": true,
-      "name": "nameBox",
-      "persistentUuid": "3d6f2dd4-8baa-4e71-aef7-dfa094325c7f",
+      "layer": "Dialogue",
+      "name": "name",
+      "persistentUuid": "b469688f-c3cb-4909-84e5-b74341b258c4",
       "width": 0,
-      "x": 135,
-      "y": 440,
-      "zOrder": 6,
+      "x": 158,
+      "y": 427,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 530,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "female1",
-      "persistentUuid": "bec81378-335e-456e-948a-55bd3c52595b",
-      "width": 530,
-      "x": 293,
-      "y": 191,
+      "layer": "Dialogue",
+      "name": "nameBox",
+      "persistentUuid": "8e30757e-4503-45f2-ada1-29d493e57907",
+      "width": 0,
+      "x": 99,
+      "y": 418,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialogue",
+      "name": "textBox",
+      "persistentUuid": "c88ce8e6-3c75-484b-88d2-59194d8278cc",
+      "width": 0,
+      "x": 93,
+      "y": 500,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Option UI",
+      "name": "ChangeBGButton1",
+      "persistentUuid": "e1e4dd02-344b-4762-82a7-d80a3931d84f",
+      "width": 0,
+      "x": 538,
+      "y": 488,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -169,22 +176,6 @@
         "tileSize": 128,
         "tilesWithHitBox": ""
       }
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "NewPanelSprite",
-      "rightMargin": 0,
-      "texture": "IMG_0059.PNG",
-      "tiled": false,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -458,7 +449,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "name",
+        "text": "You",
         "opacity": 255,
         "fontSize": 45,
         "visible": true,
@@ -765,6 +756,53 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "ChangeBGText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]MASUK[/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "5f0df6131c9646dcbe98798196db5b6d806eb25564f86d2e119a084d1e20bf74",
+      "name": "ChangeBGButton1",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Black Decorated Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 20,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Masuk"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -777,7 +815,7 @@
         "objectName": "Top_down_terrain_128x128"
       },
       {
-        "objectName": "NewPanelSprite"
+        "objectName": "ChangeBGButton1"
       },
       {
         "objectName": "BG1"
@@ -811,11 +849,27 @@
       },
       {
         "objectName": "optionText"
+      },
+      {
+        "objectName": "ChangeBGText"
       }
     ]
   },
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "activate interactions with changebgbutton set to no to disabled its functionality"
+    },
+    {
+      "aiGeneratedEventId": "01KB4FH1QFNHQB4V7SW8DB24P7",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -833,7 +887,7 @@
             "value": "DialogueTree::LoadDialogueFromJsonFile"
           },
           "parameters": [
-            "",
+            "script.json",
             "script.json"
           ]
         },
@@ -853,10 +907,37 @@
           "parameters": [
             "\"Start\""
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "ChangeBGButton1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "ChangeBGText"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "ChangeBGButton1",
+            "ButtonFSM",
+            "no"
+          ]
         }
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -892,7 +973,7 @@
                 "",
                 "\"typewritter\"",
                 ">=",
-                "0.04"
+                "0.02"
               ]
             }
           ],
@@ -912,68 +993,341 @@
                 "\"typewritter\""
               ]
             }
-          ],
-          "events": [
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "MouseButtonFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Left\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DialogueTree::GoToNextLine"
-                  },
-                  "parameters": []
-                }
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "MouseButtonFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Right\""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DialogueTree::CompleteClippedTextScrolling"
-                  },
-                  "parameters": []
-                }
+              "type": {
+                "value": "DialogueTree::HasClippedTextScrollingCompleted"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::GoToNextLine"
+              },
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "DialogueTree::HasClippedTextScrollingCompleted"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::CompleteClippedTextScrolling"
+              },
+              "parameters": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "DialogueTree::IsDialogueLineType"
+          },
+          "parameters": [
+            "\"options\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Option UI\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "when the dialoge line is options is for when the script.json has 1/2 link of choices it run the action to show layer and hide while at the same time activating the button\n\nright now in order to do this we have to have atleast 2 option in the script which is stupid but it'll do for now"
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DialogueTree::IsDialogueLineType"
+          },
+          "parameters": [
+            "\"options\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Option UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "ChangeBGButton1",
+            "yes",
+            "yes"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsMouseWheelScrollingUp"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::SelectPreviousOption"
+              },
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsMouseWheelScrollingDown"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::SelectNextOption"
+              },
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::ConfirmSelectOption"
+              },
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::HasSelectedOptionChanged"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "DialogueTree::IsCommandCalled"
+              },
+              "parameters": [
+                "BG1.Animation::Name()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "optionText",
+                "=",
+                "DialogueTree::VerticalOptionsList(\"\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "BG1",
+                "Animation",
+                "=",
+                "\"lorong\""
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "aiGeneratedEventId": "01KB4FHECTE82FWPA0TRCZMDNX",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "ScriptDone",
+            "true",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "ChangeBGButton1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "ChangeBGText",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01KB4FHN9MNH4PEBWQN234JFPN",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "ChangeBGButton1",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "BG1",
+            "Animation",
+            "=",
+            "\"lorong\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "ScriptDone",
+            "False",
+            "False"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "changebg1button is for changing background by changing the animation set to whatever the set we pick\nIT NEEDS TO BE DISABLED OR USER CAN PRESS IT EVEN WHEN THE BUTTON IS INVISIBLE"
     }
   ],
   "layers": [
@@ -1003,6 +1357,59 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialogue",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
@@ -1099,6 +1506,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

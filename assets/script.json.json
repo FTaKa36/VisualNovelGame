@@ -2,10 +2,30 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?",
+		"body": "Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?\n\n[[ masuk|lorong]] \n[[ masuk2|lorong2]]",
 		"position": {
-			"x": 495,
+			"x": 501,
 			"y": 342
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lorong",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 314,
+			"y": 610
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lorong2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 689,
+			"y": 604
 		},
 		"colorID": 0
 	}
