@@ -18,9 +18,9 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49508400737488983,
+    "zoomFactor": 0.5653158055126322,
     "windowMask": false,
-    "selectedLayer": "Bt_lorong"
+    "selectedLayer": "kamar"
   },
   "objectsGroups": [
     {
@@ -180,6 +180,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "kamar",
+      "name": "bt_note",
+      "persistentUuid": "06871e3f-3d5e-45f2-bea2-7f4660abea0d",
+      "width": 105,
+      "x": 522,
+      "y": 349,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -219,6 +236,54 @@
       "effects": [],
       "behaviors": [],
       "animations": [
+        {
+          "name": "kamar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BG\\IMG_0058.PNG",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1536,
+                        "y": 0
+                      },
+                      {
+                        "x": 1536,
+                        "y": 1024
+                      },
+                      {
+                        "x": 0,
+                        "y": 1024
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "lorong",
           "useMultipleDirections": false,
@@ -326,54 +391,6 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\BG\\IMG_0059.PNG",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1536,
-                        "y": 0
-                      },
-                      {
-                        "x": 1536,
-                        "y": 1024
-                      },
-                      {
-                        "x": 0,
-                        "y": 1024
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "kamar",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\BG\\IMG_0058.PNG",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -893,6 +910,24 @@
         "HoveredFadeOutDuration": 0.25,
         "LabelText": "Masuk"
       }
+    },
+    {
+      "assetStoreId": "5f0df6131c9646dcbe98798196db5b6d806eb25564f86d2e119a084d1e20bf74",
+      "name": "bt_note",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Black Decorated Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 20,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "?"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -948,6 +983,9 @@
       },
       {
         "objectName": "ChangeBGText"
+      },
+      {
+        "objectName": "bt_note"
       }
     ]
   },
@@ -1075,6 +1113,14 @@
           },
           "parameters": [
             "bt_kamar"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "bt_note"
           ]
         }
       ]
@@ -1337,6 +1383,15 @@
               "parameters": [
                 "ChangeBGButton1"
               ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Bt_lorong\""
+              ]
             }
           ]
         }
@@ -1406,6 +1461,68 @@
             "textR": 0
           },
           "comment": "changebg1button is for changing background by changing the animation set to whatever the set we pick\nIT NEEDS TO BE DISABLED OR USER CAN PRESS IT EVEN WHEN THE BUTTON IS INVISIBLE"
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "bt_kamar",
+            "ButtonFSM"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "BG1",
+            "Animation",
+            "=",
+            "\"kamar\""
+          ]
+        },
+        {
+          "type": {
+            "value": "DialogueTree::StartDialogueFromBranch"
+          },
+          "parameters": [
+            "\"Kamar\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Bt_lorong\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "bt_note",
+            ""
+          ]
         }
       ]
     }
@@ -1541,7 +1658,7 @@
       "isLocked": false,
       "name": "Option UI",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
@@ -1593,6 +1710,59 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Bt_lorong",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "kamar",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

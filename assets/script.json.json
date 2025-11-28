@@ -22,9 +22,9 @@
 	{
 		"title": "lorong2",
 		"tags": "",
-		"body": "",
+		"body": "Empty Text",
 		"position": {
-			"x": 965,
+			"x": 976,
 			"y": 445
 		},
 		"colorID": 0
@@ -52,7 +52,7 @@
 	{
 		"title": "pentagramlock",
 		"tags": "",
-		"body": "",
+		"body": "Empty Text",
 		"position": {
 			"x": 934,
 			"y": 718
