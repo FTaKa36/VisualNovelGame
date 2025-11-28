@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Base",
   "gdVersion": {
     "build": 245,
     "major": 5,
@@ -243,7 +243,7 @@
         "disablePreload": false,
         "file": "assets/Lorong.json.json",
         "kind": "json",
-        "metadata": "{\"extension\":\".json\"}",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/Lorong.json.json\"}",
         "name": "Lorong.json",
         "userAdded": false
       },
@@ -315,6 +315,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/base"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
     }
   ],
   "externalEvents": [],

@@ -4,29 +4,59 @@
 		"tags": "",
 		"body": "Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?\n\n[[ masuk|lorong]] \n[[ masuk2|lorong2]]",
 		"position": {
-			"x": 501,
-			"y": 342
+			"x": 747,
+			"y": 182
 		},
 		"colorID": 0
 	},
 	{
 		"title": "lorong",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "Rasanya ada yang mengawasi dari balik lorong.\n\n[[ Kamar|Kamar]] \n[[ pentagram|pentagramlock]]",
 		"position": {
-			"x": 314,
-			"y": 610
+			"x": 677,
+			"y": 440
 		},
 		"colorID": 0
 	},
 	{
 		"title": "lorong2",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "",
 		"position": {
-			"x": 689,
-			"y": 604
+			"x": 965,
+			"y": 445
 		},
 		"colorID": 0
+	},
+	{
+		"title": "Node",
+		"tags": "",
+		"body": "Hallway",
+		"position": {
+			"x": -217,
+			"y": 195
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Kamar",
+		"tags": "",
+		"body": "Ini… benar kamar yang mereka tugaskan padaku?",
+		"position": {
+			"x": 651,
+			"y": 717
+		},
+		"colorID": 0
+	},
+	{
+		"title": "pentagramlock",
+		"tags": "",
+		"body": "",
+		"position": {
+			"x": 934,
+			"y": 718
+		},
+		"colorID": 8
 	}
 ]
