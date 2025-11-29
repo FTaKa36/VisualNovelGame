@@ -1,7 +1,7 @@
 {
   "firstLayout": "Base",
   "gdVersion": {
-    "build": 245,
+    "build": 247,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -80,7 +80,9 @@
     "authorIds": [],
     "authorUsernames": [],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -301,9 +303,56 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ab812c7d15ad3474b6e55761235713b68f34374f3f064d1b8685ed46720df2f8_ArchitectsDaughter.ttf",
           "name": "ArchitectsDaughter.ttf"
         }
+      },
+      {
+        "file": "assets/Notes/awal cerita.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\awal cerita.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/pada malam 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\pada malam 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\6.png",
+        "smoothed": true,
+        "userAdded": false
       }
-    ],
-    "resourceFolders": []
+    ]
   },
   "objects": [],
   "objectsFolderStructure": {

@@ -2,7 +2,7 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?\n\n[[ masuk|lorong]] \n[[ masuk2|lorong2]]",
+		"body": "\"Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?\"\n\n[[ masuk|lorong]] \n[[ masuk2|lorong2Before]]",
 		"position": {
 			"x": 747,
 			"y": 182
@@ -12,7 +12,7 @@
 	{
 		"title": "lorong",
 		"tags": "",
-		"body": "Rasanya ada yang mengawasi dari balik lorong.\n\n[[ Kamar|Kamar]] \n[[ pentagram|pentagramlock]]",
+		"body": "\"Rasanya ada yang mengawasi dari balik lorong.\"\n\n[[ Kamar|Kamar]] \n[[ pentagram|pentagramlock]]",
 		"position": {
 			"x": 677,
 			"y": 440
@@ -20,9 +20,9 @@
 		"colorID": 0
 	},
 	{
-		"title": "lorong2",
+		"title": "lorong2Before",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "\"Sepertinya aku belum bisa masuk ke sini.\"",
 		"position": {
 			"x": 976,
 			"y": 445
@@ -42,10 +42,10 @@
 	{
 		"title": "Kamar",
 		"tags": "",
-		"body": "Ini… benar kamar yang mereka tugaskan padaku?",
+		"body": "\"Ini… benar kamar yang mereka tugaskan padaku?\"\n\n[[letter|letter]]",
 		"position": {
-			"x": 651,
-			"y": 717
+			"x": 650,
+			"y": 716
 		},
 		"colorID": 0
 	},
@@ -58,5 +58,15 @@
 			"y": 718
 		},
 		"colorID": 8
+	},
+	{
+		"title": "letter",
+		"tags": "",
+		"body": "\"apa maksudnya ini.\"",
+		"position": {
+			"x": 616,
+			"y": 1010
+		},
+		"colorID": 0
 	}
 ]
