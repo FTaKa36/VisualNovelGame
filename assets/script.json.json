@@ -22,10 +22,10 @@
 	{
 		"title": "lorong2Before",
 		"tags": "",
-		"body": "\"Sepertinya aku belum bisa masuk ke sini.\"",
+		"body": "Empty Text",
 		"position": {
-			"x": 976,
-			"y": 445
+			"x": 1118,
+			"y": 177
 		},
 		"colorID": 0
 	},
@@ -42,7 +42,7 @@
 	{
 		"title": "Kamar",
 		"tags": "",
-		"body": "\"Ini… benar kamar yang mereka tugaskan padaku?\"\n\n[[letter|letter]]",
+		"body": "\"Ini… benar kamar yang mereka tugaskan padaku?\"\n\n[[letter|letter]]\n[[letter2|lette2]]",
 		"position": {
 			"x": 650,
 			"y": 716
@@ -52,12 +52,12 @@
 	{
 		"title": "pentagramlock",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "\"Sepertinya aku belum bisa masuk ke sini.\"\n ",
 		"position": {
-			"x": 934,
-			"y": 718
+			"x": 1051,
+			"y": 636
 		},
-		"colorID": 8
+		"colorID": 7
 	},
 	{
 		"title": "letter",
@@ -66,6 +66,26 @@
 		"position": {
 			"x": 616,
 			"y": 1010
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lette2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 922,
+			"y": 1012
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lorong4",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1413,
+			"y": 628
 		},
 		"colorID": 0
 	}
