@@ -1,6 +1,6 @@
 # 🎮 Visual Novel Game
 
-### A small game created as a gift for a friend.
+### A small game created for my friend with his assignment
 
 # 📘 Overview
 
