@@ -1720,10 +1720,24 @@
           "parameters": [
             "screenTidur"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\ambient_wind.mp3",
+            "1",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1858,6 +1872,7 @@
       "comment": "when the dialoge line is options is for when the script.json has 1/2 link of choices it run the action to show layer and hide while at the same time activating the button\n\nright now in order to do this we have to have atleast 2 option in the script which is stupid but it'll do for now"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2181,6 +2196,29 @@
           },
           "parameters": [
             "ChangeBGButton1"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeSoundVolume"
+          },
+          "parameters": [
+            "",
+            "1",
+            "0",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_open_door.mp3",
+            "",
+            "",
+            ""
           ]
         }
       ],
@@ -2868,7 +2906,16 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.5"
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Amimir\""
                   ]
                 },
                 {
@@ -2885,7 +2932,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.5"
+                    "0.2"
                   ]
                 },
                 {
@@ -2901,7 +2948,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.5"
+                    "0.2"
                   ]
                 },
                 {
@@ -2918,7 +2965,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.5"
+                    "0.2"
                   ]
                 },
                 {

@@ -1,7 +1,7 @@
 {
   "firstLayout": "Base",
   "gdVersion": {
-    "build": 247,
+    "build": 248,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -376,6 +376,26 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\sound\\doorOpen.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/ambient_wind.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\ambient_wind.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_open_door.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_open_door.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
