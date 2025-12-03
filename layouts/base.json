@@ -2019,6 +2019,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2287,6 +2288,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2339,8 +2341,8 @@
             "value": "PanelSpriteButton::PanelSpriteButton::Activate"
           },
           "parameters": [
-            "bt_note",
-            "no",
+            "bt_pentagram",
+            "yes",
             ""
           ]
         }
@@ -2433,6 +2435,40 @@
               "conditions": [
                 {
                   "type": {
+                    "inverted": true,
+                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "bt_pentagram",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "bt_kamar",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "DialogueTree::CurrentBranchTitle"
                   },
                   "parameters": [
@@ -2465,6 +2501,26 @@
                   "parameters": [
                     "",
                     "\"Dialogue\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "bt_pentagram",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "bt_kamar",
+                    "yes",
+                    ""
                   ]
                 }
               ]
@@ -2906,6 +2962,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
