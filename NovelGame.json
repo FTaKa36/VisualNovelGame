@@ -400,6 +400,86 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_close_door.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_close_door.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_open_locked_door.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_open_locked_door.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/ambient_empty_house.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\ambient_empty_house.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_open_notes.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_open_notes.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_sleep.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_sleep.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_breath.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_breath.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_door_open.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_door_open.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_flickering_light.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_flickering_light.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },

@@ -1872,7 +1872,6 @@
       "comment": "when the dialoge line is options is for when the script.json has 1/2 link of choices it run the action to show layer and hide while at the same time activating the button\n\nright now in order to do this we have to have atleast 2 option in the script which is stupid but it'll do for now"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2081,6 +2080,15 @@
                 "yes",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_note",
+                ""
+              ]
             }
           ],
           "events": [
@@ -2115,6 +2123,14 @@
                     "bt_pentagram",
                     "no",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "bt_note"
                   ]
                 }
               ]
@@ -2211,11 +2227,44 @@
         },
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\ambient_empty_house.mp3",
+            "2",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "PlaySound"
           },
           "parameters": [
             "",
             "assets\\sound\\player_open_door.mp3",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_close_door.mp3",
             "",
             "",
             ""
@@ -2318,6 +2367,18 @@
               },
               "parameters": [
                 "\"pentagramlock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sound\\player_open_locked_door.mp3",
+                "",
+                "",
+                ""
               ]
             }
           ],
@@ -2509,10 +2570,31 @@
           "parameters": [
             "bt_kamar"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_open_door.mp3",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "bt_note"
+          ]
         }
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2579,6 +2661,18 @@
           },
           "parameters": [
             "bt_note"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_open_notes.mp3",
+            "",
+            "200",
+            ""
           ]
         }
       ],
@@ -2656,6 +2750,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2732,6 +2827,18 @@
           },
           "parameters": [
             "bt_tidur"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_sleep.mp3",
+            "",
+            "100",
+            "2"
           ]
         }
       ],
@@ -2833,6 +2940,18 @@
         },
         {
           "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\event_door_open.mp3",
+            "",
+            "50",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
@@ -2868,21 +2987,9 @@
               },
               "parameters": [
                 "",
-                "assets\\sound\\breath.mp3",
+                "assets\\sound\\event_breath.mp3",
                 "",
-                "150",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sound\\doorOpen.mp3",
-                "",
-                "100",
+                "20",
                 "1"
               ]
             }
@@ -2907,6 +3014,18 @@
                   },
                   "parameters": [
                     "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sound\\event_flickering_light.mp3",
+                    "",
+                    "50",
+                    "1"
                   ]
                 },
                 {
