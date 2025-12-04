@@ -122,10 +122,30 @@
 	{
 		"title": "panik",
 		"tags": "",
-		"body": "“Lampu berkedip-kedip. Ini mulai terasa tidak wajar.”\n\n“Siapa yang menangis? Suaranya… dekat sekali.”\n\n\"Sebaiknya aku tidur saja\"",
+		"body": "“Lampu berkedip-kedip. Ini mulai terasa tidak wajar.”\n\n“Siapa yang menangis? Suaranya… dekat sekali.”\n\n\"Sebaiknya aku kembali tidur saja\"",
 		"position": {
 			"x": 141,
 			"y": 411
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidurPanik",
+		"tags": "",
+		"body": "\"....\"",
+		"position": {
+			"x": 148,
+			"y": 652
+		},
+		"colorID": 0
+	},
+	{
+		"title": "noteLagi",
+		"tags": "",
+		"body": "\"Ada catatan lagi?\"\n\n\"Mati seperti kami?\"",
+		"position": {
+			"x": 38,
+			"y": 923
 		},
 		"colorID": 0
 	}
