@@ -2,10 +2,150 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?",
+		"body": "\"Hari pertama kuliah… tapi kenapa asramanya terlihat seperti bangunan yang sudah lama ditinggalkan?\"\n\n[[ masuk|lorong]] \n[[ masuk2|lorong2Before]]",
 		"position": {
-			"x": 495,
-			"y": 342
+			"x": 747,
+			"y": 182
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lorong",
+		"tags": "",
+		"body": "\"Rasanya ada yang mengawasi dari balik lorong.\"\n\n[[ Kamar|Kamar]] \n[[ pentagram|pentagramlock]]",
+		"position": {
+			"x": 677,
+			"y": 440
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lorong2Before",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1118,
+			"y": 177
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node",
+		"tags": "",
+		"body": "Hallway",
+		"position": {
+			"x": -217,
+			"y": 195
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Kamar",
+		"tags": "",
+		"body": "\"Ini… benar kamar yang mereka tugaskan padaku?\"\n\n[[letter|letter]]\n[[letter2|lette2]]",
+		"position": {
+			"x": 650,
+			"y": 716
+		},
+		"colorID": 0
+	},
+	{
+		"title": "pentagramlock",
+		"tags": "",
+		"body": "\"Sepertinya aku belum bisa masuk ke sini.\"\n ",
+		"position": {
+			"x": 1051,
+			"y": 636
+		},
+		"colorID": 7
+	},
+	{
+		"title": "letter",
+		"tags": "",
+		"body": "\"Apa maksudnya ini.\" \n\n[[tidur|tidur]]\n[[tidur2|tidur2]]",
+		"position": {
+			"x": 616,
+			"y": 1010
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lette2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 922,
+			"y": 1012
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lorong4",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1413,
+			"y": 628
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidur",
+		"tags": "",
+		"body": "\"Sebaiknya aku tidur dulu.\"\n\n\"ZZZZ.....\"",
+		"position": {
+			"x": 600,
+			"y": 1280
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidur2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 877,
+			"y": 1274
+		},
+		"colorID": 0
+	},
+	{
+		"title": "day2",
+		"tags": "",
+		"body": "\"Suara apa itu?\"\n\n\"Kenapa ada suara pintu kamar terbuka juga?\"",
+		"position": {
+			"x": 288,
+			"y": 151
+		},
+		"colorID": 0
+	},
+	{
+		"title": "panik",
+		"tags": "",
+		"body": "“Lampu berkedip-kedip. Ini mulai terasa tidak wajar.”\n\n“Siapa yang menangis? Suaranya… dekat sekali.”\n\n\"Sebaiknya aku kembali tidur saja\"",
+		"position": {
+			"x": 141,
+			"y": 411
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidurPanik",
+		"tags": "",
+		"body": "\"....\"",
+		"position": {
+			"x": 148,
+			"y": 652
+		},
+		"colorID": 0
+	},
+	{
+		"title": "noteLagi",
+		"tags": "",
+		"body": "\"Ada catatan lagi?\"\n\n\"Mati seperti kami?\"",
+		"position": {
+			"x": 38,
+			"y": 923
 		},
 		"colorID": 0
 	}

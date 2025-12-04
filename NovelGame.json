@@ -1,9 +1,9 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Base",
   "gdVersion": {
-    "build": 245,
+    "build": 249,
     "major": 5,
-    "minor": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -80,7 +80,10 @@
     "authorIds": [],
     "authorUsernames": [],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "mobile",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -230,9 +233,255 @@
         "name": "assets\\BG\\nameBox.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "hallway.PNG",
+        "kind": "image",
+        "metadata": "",
+        "name": "hallway.PNG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/Lorong.json.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/Lorong.json.json\"}",
+        "name": "Lorong.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/ChangeBGButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "ChangeBGButton",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Black Decorated Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Black Decorated Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/8a9f8afaf0442f49cd7d5318d31ac6117137ec91d9086e9bdd59b052a4fa71f0_Black Decorated Button_Hovered.png",
+          "name": "Black Decorated Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Black Decorated Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Black Decorated Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/6652cc81d33cb5485e0bf19ed2a92aac70b5c9fb45837762d094c8dbecc30d4d_Black Decorated Button_Idle.png",
+          "name": "Black Decorated Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Black Decorated Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Black Decorated Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/61997299d1d329fff69772b1111ba7c07b6c0a96a9a17090d2bf2cc31ff08e00_Black Decorated Button_Pressed.png",
+          "name": "Black Decorated Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/ArchitectsDaughter.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ArchitectsDaughter.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ab812c7d15ad3474b6e55761235713b68f34374f3f064d1b8685ed46720df2f8_ArchitectsDaughter.ttf",
+          "name": "ArchitectsDaughter.ttf"
+        }
+      },
+      {
+        "file": "assets/Notes/awal cerita.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\awal cerita.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/pada malam 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\pada malam 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Notes/Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Notes\\Hari ke-2 di asrama ini aku mulai mendengar langkah kaki di lorong setiap jam 1 pagi. Aku kira itu te\\6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/blackScreen.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\blackScreen.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/breath.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\breath.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/doorOpen.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\doorOpen.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/ambient_wind.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\ambient_wind.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_open_door.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_open_door.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_close_door.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_close_door.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_open_locked_door.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_open_locked_door.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/ambient_empty_house.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\ambient_empty_house.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_open_notes.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_open_notes.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_sleep.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_sleep.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_breath.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_breath.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_door_open.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_door_open.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_flickering_light.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_flickering_light.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
-    ],
-    "resourceFolders": []
+    ]
   },
   "objects": [],
   "objectsFolderStructure": {
@@ -244,9 +493,22 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/base"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    }
+  ],
   "externalLayouts": []
 }
