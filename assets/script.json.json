@@ -260,12 +260,12 @@
 		"colorID": 0
 	},
 	{
-		"title": "kamarPenta1",
+		"title": "kamarPenta",
 		"tags": "",
 		"body": "“Ini dia… ruang tempat ritual itu dilakukan.”\n\n“Ritual pemanggilan… tapi tidak pernah diselesaikan.”\n\n“Rohnya terperangkap di antara hidup dan mati.”",
 		"position": {
-			"x": -277,
-			"y": 431
+			"x": -413,
+			"y": 425
 		},
 		"colorID": 0
 	},
@@ -276,16 +276,6 @@
 		"position": {
 			"x": -279,
 			"y": 670
-		},
-		"colorID": 0
-	},
-	{
-		"title": "kamarPenta0",
-		"tags": "",
-		"body": "“Ini dia… ruang tempat ritual itu dilakukan.”\n\n“Ritual pemanggilan… tapi tidak pernah diselesaikan.”\n\n“Rohnya terperangkap di antara hidup dan mati.”",
-		"position": {
-			"x": -572,
-			"y": 432
 		},
 		"colorID": 0
 	}
