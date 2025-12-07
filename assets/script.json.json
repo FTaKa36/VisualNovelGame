@@ -34,8 +34,8 @@
 		"tags": "",
 		"body": "Hallway",
 		"position": {
-			"x": -217,
-			"y": 195
+			"x": -829,
+			"y": 180
 		},
 		"colorID": 0
 	},
@@ -182,7 +182,7 @@
 	{
 		"title": "rohSpawn",
 		"tags": "",
-		"body": "“Bukan… bukan manusia.”\r\n\r\n“aku harus lari!”\r\n\r\n“Jangan menatap matanya!”",
+		"body": "\"Siapa itu?\"\r\n\r\n“Bukan… Bukan manusia.”\r\n\r\n“Aku harus lari!”\r\n\r\n“Sebaiknya aku tidur dan pura-pura tidak melihatnya saja!”\r\n\r\n [[kamarAfterSeeRoh|kamarAfterSeeRoh]]\r\n [[kamarAfterSeeRoh2|kamarAfterSeeRoh2]]",
 		"position": {
 			"x": -31,
 			"y": 1691
@@ -196,6 +196,96 @@
 		"position": {
 			"x": 228,
 			"y": 1690
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarAfterSeeRoh",
+		"tags": "",
+		"body": "\"Apa yang barusan aku lihat?\"\n\n\"Aku harus cepat-cepat tidur malam ini!\"",
+		"position": {
+			"x": -48,
+			"y": 1968
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarAfterSeeRoh2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 221,
+			"y": 1968
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidurRoh",
+		"tags": "",
+		"body": "\"ZzZ\"\n\n\"....\"",
+		"position": {
+			"x": -58,
+			"y": 2231
+		},
+		"colorID": 0
+	},
+	{
+		"title": "foundLilin",
+		"tags": "",
+		"body": "\"Lilin untuk apa ini? Sudahlah aku simpan saja dulu\"",
+		"position": {
+			"x": -541,
+			"y": 157
+		},
+		"colorID": 0
+	},
+	{
+		"title": "afterNemuLilin",
+		"tags": "",
+		"body": "\"Sepertinya tidak ada yang bisa aku lakukan, aku tidur saja dulu\"\n\n\"ZzZ..\"",
+		"position": {
+			"x": -253,
+			"y": 160
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lilinNotFound",
+		"tags": "",
+		"body": "\"Sial!\"\n\n\"Aku tidak mempunyai lilin.\"",
+		"position": {
+			"x": -581,
+			"y": 672
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarPenta1",
+		"tags": "",
+		"body": "“Ini dia… ruang tempat ritual itu dilakukan.”\n\n“Ritual pemanggilan… tapi tidak pernah diselesaikan.”\n\n“Rohnya terperangkap di antara hidup dan mati.”",
+		"position": {
+			"x": -277,
+			"y": 431
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lilinHasFound",
+		"tags": "",
+		"body": "\"Lilin ini pasti untuk kamar ini\"\n\n\"Bagus, lilinnya sudah menyala\"",
+		"position": {
+			"x": -279,
+			"y": 670
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarPenta0",
+		"tags": "",
+		"body": "“Ini dia… ruang tempat ritual itu dilakukan.”\n\n“Ritual pemanggilan… tapi tidak pernah diselesaikan.”\n\n“Rohnya terperangkap di antara hidup dan mati.”",
+		"position": {
+			"x": -572,
+			"y": 432
 		},
 		"colorID": 0
 	}
