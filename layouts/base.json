@@ -3266,7 +3266,41 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.2"
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Dialogue\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Dialogue\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"panik\""
                   ]
                 },
                 {
@@ -3353,41 +3387,19 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "HideLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Dialogue\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
                     "2"
                   ]
                 },
                 {
                   "type": {
-                    "value": "ShowLayer"
+                    "value": "PlaySound"
                   },
                   "parameters": [
                     "",
-                    "\"Dialogue\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::StartDialogueFromBranch"
-                  },
-                  "parameters": [
-                    "\"panik\""
+                    "assets\\sound\\event_cry.mp3",
+                    "",
+                    "50",
+                    "1"
                   ]
                 },
                 {
@@ -3501,6 +3513,18 @@
           "parameters": [
             "bt_kamarMasuk"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_open_door.mp3",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     },
@@ -3561,6 +3585,18 @@
           },
           "parameters": [
             "bt_tidur2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_sleep.mp3",
+            "",
+            "100",
+            "2"
           ]
         }
       ],
@@ -3643,6 +3679,15 @@
       "actions": [
         {
           "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"note\""
+          ]
+        },
+        {
+          "type": {
             "value": "Montre"
           },
           "parameters": [
@@ -3658,7 +3703,7 @@
             "notes",
             "Animation",
             "=",
-            "\"letter\""
+            "\"portal\""
           ]
         },
         {
@@ -3718,7 +3763,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "4"
               ]
             },
             {

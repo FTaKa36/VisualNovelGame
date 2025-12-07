@@ -480,6 +480,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_cry.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_cry.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
