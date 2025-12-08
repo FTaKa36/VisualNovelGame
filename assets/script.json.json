@@ -34,8 +34,8 @@
 		"tags": "",
 		"body": "Hallway",
 		"position": {
-			"x": -217,
-			"y": 195
+			"x": -829,
+			"y": 180
 		},
 		"colorID": 0
 	},
@@ -122,10 +122,10 @@
 	{
 		"title": "panik",
 		"tags": "",
-		"body": "“Lampu berkedip-kedip. Ini mulai terasa tidak wajar.”\n\n“Siapa yang menangis? Suaranya… dekat sekali.”\n\n\"Sebaiknya aku kembali tidur saja\"",
+		"body": "“Lampu berkedip-kedip. Ini mulai terasa tidak wajar.”\n\n“Siapa yang menangis? Suaranya… dekat sekali.”\n\n\"Sebaiknya aku kembali tidur saja.\"",
 		"position": {
-			"x": 141,
-			"y": 411
+			"x": 139,
+			"y": 409
 		},
 		"colorID": 0
 	},
@@ -134,8 +134,8 @@
 		"tags": "",
 		"body": "\"....\"",
 		"position": {
-			"x": 148,
-			"y": 652
+			"x": 72,
+			"y": 646
 		},
 		"colorID": 0
 	},
@@ -146,6 +146,136 @@
 		"position": {
 			"x": 38,
 			"y": 923
+		},
+		"colorID": 0
+	},
+	{
+		"title": "playerConfuse",
+		"tags": "",
+		"body": "“Setiap malam semakin buruk. Ada yang tidak benar.”\r\n\r\n“Catatan-catatan ini… seperti petunjuk yang sengaja ditinggalkan.” \r\n\r\n[[tidurConfuse|tidurConfuse]] \r\n[[tidurConfuse2|tidurConfuse2]]",
+		"position": {
+			"x": 38,
+			"y": 1164
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidurConfuse",
+		"tags": "",
+		"body": "\"Aku harap besok tidak terjadi apa-apa.\"\n\n\"ZzZ...\"\n\n [[rohSpawn|rohSpawn]]\n [[rohSpawn2|rohSpawn2]]",
+		"position": {
+			"x": -11,
+			"y": 1418
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidurConfuse2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 219,
+			"y": 1419
+		},
+		"colorID": 0
+	},
+	{
+		"title": "rohSpawn",
+		"tags": "",
+		"body": "\"Siapa itu?\"\r\n\r\n“Bukan… Bukan manusia.”\r\n\r\n“Aku harus lari!”\r\n\r\n“Sebaiknya aku tidur dan pura-pura tidak melihatnya saja!”\r\n\r\n [[kamarAfterSeeRoh|kamarAfterSeeRoh]]\r\n [[kamarAfterSeeRoh2|kamarAfterSeeRoh2]]",
+		"position": {
+			"x": -31,
+			"y": 1691
+		},
+		"colorID": 0
+	},
+	{
+		"title": "rohSpawn2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 228,
+			"y": 1690
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarAfterSeeRoh",
+		"tags": "",
+		"body": "\"Apa yang barusan aku lihat?\"\n\n\"Aku harus cepat-cepat tidur malam ini!\"",
+		"position": {
+			"x": -48,
+			"y": 1968
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarAfterSeeRoh2",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 221,
+			"y": 1968
+		},
+		"colorID": 0
+	},
+	{
+		"title": "tidurRoh",
+		"tags": "",
+		"body": "\"ZzZ\"\n\n\"....\"",
+		"position": {
+			"x": -58,
+			"y": 2231
+		},
+		"colorID": 0
+	},
+	{
+		"title": "foundLilin",
+		"tags": "",
+		"body": "\"Lilin untuk apa ini? Sudahlah aku simpan saja dulu\"",
+		"position": {
+			"x": -541,
+			"y": 157
+		},
+		"colorID": 0
+	},
+	{
+		"title": "afterNemuLilin",
+		"tags": "",
+		"body": "\"Sepertinya tidak ada yang bisa aku lakukan, aku tidur saja dulu\"\n\n\"ZzZ..\"",
+		"position": {
+			"x": -253,
+			"y": 160
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lilinNotFound",
+		"tags": "",
+		"body": "\"Sial!\"\n\n\"Aku tidak mempunyai lilin.\"",
+		"position": {
+			"x": -581,
+			"y": 672
+		},
+		"colorID": 0
+	},
+	{
+		"title": "kamarPenta",
+		"tags": "",
+		"body": "“Ini dia… ruang tempat ritual itu dilakukan.”\n\n“Ritual pemanggilan… tapi tidak pernah diselesaikan.”\n\n“Rohnya terperangkap di antara hidup dan mati.”",
+		"position": {
+			"x": -413,
+			"y": 425
+		},
+		"colorID": 0
+	},
+	{
+		"title": "lilinHasFound",
+		"tags": "",
+		"body": "\"Lilin ini pasti untuk kamar ini\"\n\n\"Bagus, lilinnya sudah menyala\"",
+		"position": {
+			"x": -279,
+			"y": 670
 		},
 		"colorID": 0
 	}
