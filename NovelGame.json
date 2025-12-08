@@ -508,6 +508,22 @@
         "name": "assets\\lilin.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/badEnd.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\badEnd.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/goodEnd.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\goodEnd.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
