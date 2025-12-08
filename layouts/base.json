@@ -412,6 +412,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 792,
+      "keepRatio": true,
+      "layer": "Ending",
+      "name": "endScreen",
+      "persistentUuid": "5f0913fb-8f91-4ba8-ac7a-d051ff1e6ead",
+      "width": 1509,
+      "x": -97,
+      "y": -33,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1836,6 +1853,162 @@
         "HoveredFadeOutDuration": 0.25,
         "LabelText": "Nyalakan Lilin"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "endScreen",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "bad",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\badEnd.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 630
+                      },
+                      {
+                        "x": 0,
+                        "y": 630
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "good",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\goodEnd.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 630
+                      },
+                      {
+                        "x": 0,
+                        "y": 630
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "credit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\creditScene.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 630
+                      },
+                      {
+                        "x": 0,
+                        "y": 630
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1936,6 +2109,9 @@
       },
       {
         "objectName": "screenTidur"
+      },
+      {
+        "objectName": "endScreen"
       }
     ]
   },
@@ -2244,13 +2420,22 @@
         },
         {
           "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Ending\""
+          ]
+        },
+        {
+          "type": {
             "value": "PlaySoundCanal"
           },
           "parameters": [
             "",
             "assets\\sound\\ambient_wind.mp3",
             "1",
-            "",
+            "no",
             "",
             ""
           ]
@@ -2755,7 +2940,7 @@
             "",
             "assets\\sound\\ambient_empty_house.mp3",
             "2",
-            "",
+            "yes",
             "",
             ""
           ]
@@ -2821,7 +3006,19 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "BG1",
+            "Animation",
+            "=",
+            "\"pentagram\""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2838,10 +3035,11 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
+                "value": "Montre"
               },
               "parameters": [
-                "bt_interactPenta"
+                "bt_interactPenta",
+                ""
               ]
             }
           ],
@@ -2863,6 +3061,14 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "bt_interactPenta"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "DialogueTree::StartDialogueFromBranch"
                   },
                   "parameters": [
@@ -2880,21 +3086,58 @@
                 },
                 {
                   "type": {
-                    "value": "Montre"
+                    "value": "Wait"
                   },
                   "parameters": [
-                    "bt_interactPenta",
-                    ""
+                    "4"
                   ]
                 },
                 {
                   "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                    "value": "HideLayer"
                   },
                   "parameters": [
-                    "bt_interactPenta",
-                    "yes",
-                    ""
+                    "",
+                    "\"Dialogue\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Ending\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "endScreen",
+                    "Animation",
+                    "=",
+                    "\"good\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "endScreen",
+                    "Animation",
+                    "=",
+                    "\"credit\""
                   ]
                 }
               ]
@@ -2916,6 +3159,14 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "bt_interactPenta"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "DialogueTree::StartDialogueFromBranch"
                   },
                   "parameters": [
@@ -2933,21 +3184,90 @@
                 },
                 {
                   "type": {
-                    "value": "Montre"
+                    "value": "Wait"
                   },
                   "parameters": [
-                    "bt_interactPenta",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sound\\bad_ending_2.mp3",
+                    "",
+                    "",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                    "value": "Wait"
                   },
                   "parameters": [
-                    "bt_interactPenta",
-                    "yes",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sound\\bad_ending_1.mp3",
+                    "",
+                    "",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Dialogue\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Ending\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "endScreen",
+                    "Animation",
+                    "=",
+                    "\"bad\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "endScreen",
+                    "Animation",
+                    "=",
+                    "\"credit\""
                   ]
                 }
               ]
@@ -3017,6 +3337,7 @@
       ],
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3027,14 +3348,6 @@
                 "pentagramlock",
                 "True",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
-              },
-              "parameters": [
-                "\"lorong\""
               ]
             }
           ],
@@ -3062,39 +3375,6 @@
           ],
           "events": [
             {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "DialogueTree::IsDialogueLineType"
-                  },
-                  "parameters": [
-                    "\"options\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DialogueTree::StartDialogueFromBranch"
-                  },
-                  "parameters": [
-                    "\"lorong\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DialogueTree::SetStringVariable"
-                  },
-                  "parameters": [
-                    "\"lorong\"",
-                    "\"1\""
-                  ]
-                }
-              ]
-            },
-            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3111,40 +3391,6 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "bt_pentagram",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-                  },
-                  "parameters": [
-                    "bt_kamar",
-                    "no",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "value": "DialogueTree::CurrentBranchTitle"
                   },
                   "parameters": [
@@ -3153,6 +3399,14 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"pentagramlock\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Wait"
@@ -3200,18 +3454,55 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "bt_pentagram",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "bt_kamar",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
+                "value": "BooleanVariable"
               },
               "parameters": [
-                "\"afterNemuLilin\""
+                "pentagramlock",
+                "False",
+                ""
               ]
             }
           ],
@@ -3225,6 +3516,19 @@
                 "Animation",
                 "=",
                 "\"pentagram\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\sound\\ambient_pentagram.mp3",
+                "3",
+                "yes",
+                "",
+                ""
               ]
             },
             {
@@ -3249,7 +3553,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2"
+                "6"
               ]
             },
             {
@@ -3263,12 +3567,66 @@
             },
             {
               "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Bt_lorong\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
                 "bt_interactPenta",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_pentagram"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_interactPenta",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_keluar",
+                "no",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::CurrentBranchTitle"
+                  },
+                  "parameters": [
+                    "\"afterNemuLilin\""
+                  ]
+                }
+              ],
+              "actions": []
             }
           ]
         }
@@ -3328,12 +3686,110 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "bt_pentagram"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "bt_pentagram",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "DialogueTree::StartDialogueFromBranch"
+          },
+          "parameters": [
+            "\"Kamar\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Bt_lorong\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "bt_note",
+            "yes",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "bt_note",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "bt_note",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "bt_note"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "ChangeBGButton1"
+          ]
         }
       ],
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"pentagramlock\""
+              ]
+            },
             {
               "type": {
                 "value": "DialogueTree::CurrentBranchTitle"
@@ -3343,97 +3799,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "bt_pentagram"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "bt_pentagram",
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"Dialogue\""
-              ]
-            },
-            {
-              "type": {
-                "value": "DialogueTree::StartDialogueFromBranch"
-              },
-              "parameters": [
-                "\"Kamar\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Bt_lorong\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "bt_note",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "bt_note",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "bt_note",
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "bt_note"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "ChangeBGButton1"
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "disabled": true,
@@ -3872,6 +4238,14 @@
             },
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -3955,22 +4329,26 @@
                 "",
                 "\"Amimir\""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
+                "value": "Montre"
               },
               "parameters": [
-                "\"tidurRoh\""
+                "bt_tidur2",
+                ""
               ]
-            }
-          ],
-          "actions": [
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur2",
+                "yes",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Montre"
@@ -3994,8 +4372,88 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
+                "bt_tidur",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
                 "bt_lilin",
                 "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"tidurRoh\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_keluar"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "objectLilin",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_lilin",
                 ""
               ]
             },
@@ -4005,6 +4463,16 @@
               },
               "parameters": [
                 "bt_tidur",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_lilin",
+                "yes",
                 ""
               ]
             },
@@ -4080,15 +4548,6 @@
             },
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "bt_keluar",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
@@ -4103,7 +4562,7 @@
               },
               "parameters": [
                 "bt_keluar",
-                "yes",
+                "no",
                 ""
               ]
             }
@@ -4150,10 +4609,27 @@
             },
             {
               "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"kamar\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
                 "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_tidur2"
               ]
             },
             {
@@ -4176,10 +4652,19 @@
             },
             {
               "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"kamar\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "6"
+                "4"
               ]
             },
             {
@@ -4208,6 +4693,348 @@
               "parameters": [
                 "bt_keluar",
                 "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_lilin"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "objectLilin"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_lilin",
+                "no",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "bt_tidur2",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "screenTidur",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "screenTidur",
+            "Animation",
+            "=",
+            "\"turu\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_sleep.mp3",
+            "",
+            "100",
+            "2"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"panik\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"tidurPanik\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_tidur2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur2",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"tidurPanik\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Amimir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_note2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_note2",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"tidurRoh\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_keluar"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Amimir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"afterNemuLilin\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_lilin"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_lilin",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "objectLilin"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_tidur2"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Amimir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur2",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_keluar",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_keluar",
                 ""
               ]
             }
@@ -4458,7 +5285,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "8"
+                "6.5"
               ]
             },
             {
@@ -4475,7 +5302,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2"
+                "1.5"
               ]
             },
             {
@@ -4507,18 +5334,45 @@
                 "value": "DialogueTree::CurrentBranchTitle"
               },
               "parameters": [
-                "\"rohSpawn\""
+                "\"tidurConfuse\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ShowLayer"
+                "value": "Cache"
               },
               "parameters": [
-                "",
-                "\"setan\""
+                "bt_kamar"
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"rohSpawn\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_keluar",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_kamar",
+                "no",
+                ""
               ]
             },
             {
@@ -4532,10 +5386,23 @@
             },
             {
               "type": {
-                "value": "DialogueTree::StartDialogueFromBranch"
+                "value": "ShowLayer"
               },
               "parameters": [
-                "\"rohSpawn\""
+                "",
+                "\"setan\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sound\\event_jumpscare.mp3",
+                "",
+                "50",
+                "1"
               ]
             },
             {
@@ -4721,6 +5588,42 @@
               "parameters": [
                 "bt_kamar"
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_lilin"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "objectLilin"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_lilin",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "pentagramlock",
+                "False",
+                ""
+              ]
             }
           ]
         }
@@ -4825,7 +5728,7 @@
                 "value": "DialogueTree::CurrentBranchTitle"
               },
               "parameters": [
-                "\"kamarAfterSeeRoh\""
+                "\"rohSpawn\""
               ]
             }
           ],
@@ -4875,147 +5778,10 @@
             },
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "bt_tidur",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "bt_tidur",
-                "yes",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "bt_tidur2",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "screenTidur",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "screenTidur",
-            "Animation",
-            "=",
-            "\"turu\""
-          ]
-        },
-        {
-          "type": {
-            "value": "DialogueTree::StartDialogueFromBranch"
-          },
-          "parameters": [
-            "\"tidurPanik\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ShowLayer"
-          },
-          "parameters": [
-            "",
-            "\"Dialogue\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "bt_tidur2"
-          ]
-        },
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-          },
-          "parameters": [
-            "bt_tidur2",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\sound\\player_sleep.mp3",
-            "",
-            "100",
-            "2"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
-              },
-              "parameters": [
-                "\"tidurPanik\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Dialogue\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Amimir\""
+                "2"
               ]
             },
             {
@@ -5023,7 +5789,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "bt_note2",
+                "bt_tidur",
                 ""
               ]
             },
@@ -5032,7 +5798,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
-                "bt_note2",
+                "bt_tidur",
                 "yes",
                 ""
               ]
@@ -5240,7 +6006,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "6"
+                "4"
               ]
             },
             {
@@ -5291,6 +6057,18 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_pickup.mp3",
+            "",
+            "200",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ShowLayer"
           },
           "parameters": [
@@ -5314,6 +6092,14 @@
             "bt_lilin",
             "no",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "bt_tidur2"
           ]
         },
         {
@@ -5354,7 +6140,7 @@
             "value": "Montre"
           },
           "parameters": [
-            "bt_tidur",
+            "bt_tidur2",
             ""
           ]
         },
@@ -5363,7 +6149,7 @@
             "value": "PanelSpriteButton::PanelSpriteButton::Activate"
           },
           "parameters": [
-            "bt_tidur",
+            "bt_tidur2",
             "yes",
             ""
           ]
@@ -5728,6 +6514,60 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
+      "name": "setan",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
       "isLocked": true,
       "name": "Dialogue",
       "renderingType": "",
@@ -5783,7 +6623,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "setan",
+      "name": "Ending",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

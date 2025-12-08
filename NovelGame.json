@@ -508,6 +508,80 @@
         "name": "assets\\lilin.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/badEnd.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\badEnd.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/goodEnd.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\goodEnd.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/creditScene.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\creditScene.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/event_jumpscare.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\event_jumpscare.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/ambient_pentagram.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\ambient_pentagram.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/bad_ending_2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\bad_ending_2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/bad_ending_1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\bad_ending_1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/player_pickup.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\player_pickup.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },

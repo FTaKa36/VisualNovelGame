@@ -152,7 +152,7 @@
 	{
 		"title": "playerConfuse",
 		"tags": "",
-		"body": "“Setiap malam semakin buruk. Ada yang tidak benar.”\r\n\r\n“Catatan-catatan ini… seperti petunjuk yang sengaja ditinggalkan.” \r\n\r\n[[tidurConfuse|tidurConfuse]] \r\n[[tidurConfuse2|tidurConfuse2]]",
+		"body": "“Setiap malam semakin buruk. Ada yang tidak benar.”\r\n\r\n“Catatan-catatan ini… seperti petunjuk yang sengaja ditinggalkan.”",
 		"position": {
 			"x": 38,
 			"y": 1164
@@ -162,7 +162,7 @@
 	{
 		"title": "tidurConfuse",
 		"tags": "",
-		"body": "\"Aku harap besok tidak terjadi apa-apa.\"\n\n\"ZzZ...\"\n\n [[rohSpawn|rohSpawn]]\n [[rohSpawn2|rohSpawn2]]",
+		"body": "\"Aku harap besok tidak terjadi apa-apa.\"\n\n\"ZzZ...\"",
 		"position": {
 			"x": -11,
 			"y": 1418
@@ -182,7 +182,7 @@
 	{
 		"title": "rohSpawn",
 		"tags": "",
-		"body": "\"Siapa itu?\"\r\n\r\n“Bukan… Bukan manusia.”\r\n\r\n“Aku harus lari!”\r\n\r\n“Sebaiknya aku tidur dan pura-pura tidak melihatnya saja!”\r\n\r\n [[kamarAfterSeeRoh|kamarAfterSeeRoh]]\r\n [[kamarAfterSeeRoh2|kamarAfterSeeRoh2]]",
+		"body": "\"Siapa itu?\"\r\n\r\n“Bukan… Bukan manusia.”\r\n\r\n“Aku harus lari!”\r\n\r\n“Sebaiknya aku tidur dan pura-pura tidak melihatnya saja!”",
 		"position": {
 			"x": -31,
 			"y": 1691
