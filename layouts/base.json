@@ -2250,7 +2250,7 @@
             "",
             "assets\\sound\\ambient_wind.mp3",
             "1",
-            "",
+            "no",
             "",
             ""
           ]
@@ -2755,7 +2755,7 @@
             "",
             "assets\\sound\\ambient_empty_house.mp3",
             "2",
-            "",
+            "yes",
             "",
             ""
           ]
@@ -2838,10 +2838,11 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
+                "value": "Montre"
               },
               "parameters": [
-                "bt_interactPenta"
+                "bt_interactPenta",
+                ""
               ]
             }
           ],
@@ -3263,10 +3264,37 @@
             },
             {
               "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Bt_lorong\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
                 "bt_interactPenta",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_pentagram"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_interactPenta",
+                "yes",
                 ""
               ]
             }
@@ -3872,6 +3900,14 @@
             },
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -3955,22 +3991,26 @@
                 "",
                 "\"Amimir\""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
+                "value": "Montre"
               },
               "parameters": [
-                "\"tidurRoh\""
+                "bt_tidur2",
+                ""
               ]
-            }
-          ],
-          "actions": [
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur2",
+                "yes",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Montre"
@@ -3994,8 +4034,88 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
+                "bt_tidur",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
                 "bt_lilin",
                 "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"tidurRoh\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_keluar"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "objectLilin",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_lilin",
                 ""
               ]
             },
@@ -4005,6 +4125,16 @@
               },
               "parameters": [
                 "bt_tidur",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_lilin",
+                "yes",
                 ""
               ]
             },
@@ -4080,15 +4210,6 @@
             },
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "bt_keluar",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
@@ -4103,7 +4224,7 @@
               },
               "parameters": [
                 "bt_keluar",
-                "yes",
+                "no",
                 ""
               ]
             }
@@ -4150,10 +4271,27 @@
             },
             {
               "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"kamar\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
                 "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_tidur2"
               ]
             },
             {
@@ -4172,6 +4310,15 @@
               "parameters": [
                 "",
                 "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"kamar\""
               ]
             },
             {
@@ -4208,6 +4355,296 @@
               "parameters": [
                 "bt_keluar",
                 "yes",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "bt_tidur2",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "screenTidur",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "screenTidur",
+            "Animation",
+            "=",
+            "\"turu\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sound\\player_sleep.mp3",
+            "",
+            "100",
+            "2"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"panik\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"tidurPanik\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_tidur2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur2",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"tidurPanik\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Amimir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_note2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_note2",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::CurrentBranchTitle"
+              },
+              "parameters": [
+                "\"tidurRoh\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_keluar"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Amimir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"afterNemuLilin\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bt_tidur2"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Amimir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_tidur2",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_keluar",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bt_keluar",
                 ""
               ]
             }
@@ -4507,18 +4944,45 @@
                 "value": "DialogueTree::CurrentBranchTitle"
               },
               "parameters": [
-                "\"rohSpawn\""
+                "\"tidurConfuse\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ShowLayer"
+                "value": "Cache"
               },
               "parameters": [
-                "",
-                "\"setan\""
+                "bt_kamar"
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"rohSpawn\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_keluar",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "bt_kamar",
+                "no",
+                ""
               ]
             },
             {
@@ -4532,10 +4996,11 @@
             },
             {
               "type": {
-                "value": "DialogueTree::StartDialogueFromBranch"
+                "value": "ShowLayer"
               },
               "parameters": [
-                "\"rohSpawn\""
+                "",
+                "\"setan\""
               ]
             },
             {
@@ -4825,7 +5290,7 @@
                 "value": "DialogueTree::CurrentBranchTitle"
               },
               "parameters": [
-                "\"kamarAfterSeeRoh\""
+                "\"rohSpawn\""
               ]
             }
           ],
@@ -4875,125 +5340,6 @@
             },
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "bt_tidur",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "bt_tidur",
-                "yes",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "bt_tidur2",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "screenTidur",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "screenTidur",
-            "Animation",
-            "=",
-            "\"turu\""
-          ]
-        },
-        {
-          "type": {
-            "value": "DialogueTree::StartDialogueFromBranch"
-          },
-          "parameters": [
-            "\"tidurPanik\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ShowLayer"
-          },
-          "parameters": [
-            "",
-            "\"Dialogue\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "bt_tidur2"
-          ]
-        },
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-          },
-          "parameters": [
-            "bt_tidur2",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\sound\\player_sleep.mp3",
-            "",
-            "100",
-            "2"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DialogueTree::CurrentBranchTitle"
-              },
-              "parameters": [
-                "\"tidurPanik\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -5002,28 +5348,10 @@
             },
             {
               "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Dialogue\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Amimir\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Montre"
               },
               "parameters": [
-                "bt_note2",
+                "bt_tidur",
                 ""
               ]
             },
@@ -5032,7 +5360,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
-                "bt_note2",
+                "bt_tidur",
                 "yes",
                 ""
               ]
@@ -5321,6 +5649,14 @@
             "value": "Cache"
           },
           "parameters": [
+            "bt_tidur2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
             "objectLilin"
           ]
         },
@@ -5354,7 +5690,7 @@
             "value": "Montre"
           },
           "parameters": [
-            "bt_tidur",
+            "bt_tidur2",
             ""
           ]
         },
@@ -5363,7 +5699,7 @@
             "value": "PanelSpriteButton::PanelSpriteButton::Activate"
           },
           "parameters": [
-            "bt_tidur",
+            "bt_tidur2",
             "yes",
             ""
           ]
@@ -5728,8 +6064,8 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
-      "name": "Dialogue",
+      "isLocked": false,
+      "name": "setan",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -5782,8 +6118,8 @@
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
-      "name": "setan",
+      "isLocked": true,
+      "name": "Dialogue",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
