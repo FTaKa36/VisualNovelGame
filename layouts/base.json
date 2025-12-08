@@ -1959,6 +1959,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "credit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\creditScene.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 0
+                      },
+                      {
+                        "x": 1200,
+                        "y": 630
+                      },
+                      {
+                        "x": 0,
+                        "y": 630
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -3072,6 +3120,25 @@
                     "=",
                     "\"good\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "endScreen",
+                    "Animation",
+                    "=",
+                    "\"credit\""
+                  ]
                 }
               ]
             },
@@ -3150,6 +3217,25 @@
                     "Animation",
                     "=",
                     "\"bad\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "endScreen",
+                    "Animation",
+                    "=",
+                    "\"credit\""
                   ]
                 }
               ]
